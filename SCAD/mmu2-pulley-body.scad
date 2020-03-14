@@ -10,11 +10,11 @@ module front_PTFE()
 {
     for (i =[0:4])
     {
-        translate([3+(i*14),-10.5,4]) rotate([90,0,0]) cylinder(r=2.2, h=15, $fn=50); 
-        translate([3+(i*14),-10.5,5.5]) rotate([90,0,0]) cylinder(r=1, h=15, $fn=50); 
-        translate([3+(i*14),-15.5,4]) rotate([90,0,0]) cylinder(r1=2.2, r2=2.4, h=5, $fn=50); 
-        translate([3+(i*14),0,4]) rotate([90,0,0]) cylinder(r=1.1, h=35, $fn=50); 
-        translate([3+(i*14),-2,4]) rotate([90,0,0]) cylinder(r1=2,r2=1.1, h=5, $fn=50); 
+        translate([3+(i*22),-10.5,4]) rotate([90,0,0]) cylinder(r=2.2, h=15, $fn=50); 
+        translate([3+(i*22),-10.5,5.5]) rotate([90,0,0]) cylinder(r=1, h=15, $fn=50); 
+        translate([3+(i*22),-15.5,4]) rotate([90,0,0]) cylinder(r1=2.2, r2=2.4, h=5, $fn=50); 
+        translate([3+(i*22),0,4]) rotate([90,0,0]) cylinder(r=1.1, h=35, $fn=50); 
+        translate([3+(i*22),-2,4]) rotate([90,0,0]) cylinder(r1=2,r2=1.1, h=5, $fn=50); 
     }
 }
 
@@ -22,13 +22,13 @@ module rear_PTFE()
 {
     for (i =[0:4])
     {
-        translate([3+(i*14),15,4]) rotate([90,0,0]) cylinder(r=1.2, h=15, $fn=50); 
-        translate([3+(i*14),11.5,4]) rotate([90,0,0]) cylinder(r2=1.2, r1=1.5, h=3, $fn=50); 
-        translate([3+(i*14),15,4]) rotate([92,0,0]) cylinder(r1=1.1, r2=1.3, h=15, $fn=50); 
-        translate([3+(i*14),25,4]) rotate([90,0,0]) cylinder(r=2.05, h=15, $fn=50); 
-        translate([3+(i*14),17,4.25]) rotate([95,0,0]) cylinder(r=2.05, h=3, $fn=50); 
-        translate([3+(i*14),36.4,1.4]) rotate([80,0,0]) cylinder(r=2.05, h=15, $fn=50); 
-        translate([2+(i*14),4.5,4]) cube([2,4,10]); 
+        translate([3+(i*22),15,4]) rotate([90,0,0]) cylinder(r=1.2, h=15, $fn=50); 
+        translate([3+(i*22),11.5,4]) rotate([90,0,0]) cylinder(r2=1.2, r1=1.5, h=3, $fn=50); 
+        translate([3+(i*22),15,4]) rotate([92,0,0]) cylinder(r1=1.1, r2=1.3, h=15, $fn=50); 
+        translate([3+(i*22),25,4]) rotate([90,0,0]) cylinder(r=2.05, h=15, $fn=50); 
+        translate([3+(i*22),17,4.25]) rotate([95,0,0]) cylinder(r=2.05, h=3, $fn=50); 
+        translate([3+(i*22),36.4,1.4]) rotate([80,0,0]) cylinder(r=2.05, h=15, $fn=50); 
+        translate([2+(i*22),4.5,4]) cube([2,4,10]); 
     }
 }
 
@@ -44,8 +44,8 @@ module pulley_body()
             {
                // body 
                translate([-18.5,-20,-24]) cube([114.5,41,31]);
-               translate([-27,-65,-25]) cube([123,92,1]);
-               translate([-27,-65,-25]) cube([123,2,3]);
+               translate([-27,-65,-25]) cube([220,92,1]);
+               translate([-27,-65,-25]) cube([220,2,3]);
                
                difference()
                 {
@@ -119,7 +119,7 @@ module pulley_body()
             translate([-7,0,24.5]) rotate([0,90,0]) cylinder(r=21, h=71, $fn=50);     
 
             // grub screws space
-            for (i =[-6:14:50])
+            for (i =[-6:37:50])
             {
                 translate([i,0,0]) rotate([0,90,0]) cylinder(r=7, h=6, $fn=50); 
             }
